@@ -1,5 +1,7 @@
 o	Project Hierarchy
+
 -TextFilter
+
 -TextFilter.UnitTests
 
 o	How to run the output
@@ -9,5 +11,6 @@ o	How to run the output
 
 o	How to run any tests that you have written
 Go to ./TextFilter.UnitTests folder and run the below commands
-- dotnet build
-- dotnet test
+> dotnet build
+> 
+> dotnet test
