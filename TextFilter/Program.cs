@@ -35,7 +35,7 @@ namespace TextFilter{
             services.AddSingleton<IFilter,VowelFilter>();
             services.AddSingleton<IFilter,LengthFilter>();
             services.AddSingleton<IFilter,LetterFilter>();
-            services.AddTransient<StreamReader>(s=> new StreamReader(configuration["TextFilePath"]));
+            services.AddSingleton<StreamReader>(s=> new StreamReader(configuration["TextFilePath"]));
             services.AddSingleton<IProcessor,TextFileProcessor>();
         }
     }
